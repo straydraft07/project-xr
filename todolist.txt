@@ -1,0 +1,11 @@
+BASIC
+1. Character orientation
+2. Character hitboxes
+3. Basic attack system - 1 move, swipe etc.
+4. First test monster - only move should be forward charge
+4.a Hitboxes
+5. Entity modifiers - debuffs, buffs, poison, hidden states - etc.
+6. Second test monster - only move should be a forward projectile.
+6.a Hitboxes
+7. Tilemap system - Tiles should have types and collision
+8. Test environment - Testing random monster spawns.

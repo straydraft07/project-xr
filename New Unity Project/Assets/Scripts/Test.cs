@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Destroy(gameObject,3f);
-    }
 
+    public float moveSpeed = 5f;
+    public Rigidbody rb;
+    Vector3 movement;
     // Update is called once per frame
     void Update()
     {
-        
+        // Input
+       movement.x = Input.GetAxis("Horizontal");
+       movement.z = Input.GetAxis("Vertical");
+    }
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position+movement*moveSpeed);
+
     }
 }
